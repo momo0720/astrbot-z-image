@@ -1,0 +1,69 @@
+{
+  "api_base_url": {
+    "description": "Z Image API 地址",
+    "type": "string",
+    "default": "https://example.com/v1"
+  },
+  "api_keys": {
+    "description": "多个 Z Image API Key。当前 Key 失败后自动切换到下一个。",
+    "type": "list",
+    "default": [
+      "YOUR_API_KEY"
+    ]
+  },
+  "api_key": {
+    "description": "旧版单个 API Key。仅当 api_keys 为空时使用。",
+    "type": "string",
+    "default": "YOUR_API_KEY"
+  },
+  "text_model": {
+    "description": "文生图模型名称",
+    "type": "string",
+    "default": "z-image-turbo"
+  },
+  "edit_model": {
+    "description": "图生图模型名称",
+    "type": "string",
+    "default": "Qwen-Image-Edit-2511"
+  },
+  "size": {
+    "description": "文生图尺寸，例如 1024x1024",
+    "type": "string",
+    "default": "1024x1024"
+  },
+  "timeout": {
+    "description": "请求超时时间（秒）",
+    "type": "int",
+    "default": 180
+  },
+  "request_retries": {
+    "description": "每个 Key 的请求重试次数",
+    "type": "int",
+    "default": 2
+  },
+  "download_retries": {
+    "description": "图片下载重试次数",
+    "type": "int",
+    "default": 2
+  },
+  "edit_num_inference_steps": {
+    "description": "图生图的 num_inference_steps 参数",
+    "type": "int",
+    "default": 4
+  },
+  "edit_guidance_scale": {
+    "description": "图生图的 guidance_scale 参数",
+    "type": "int",
+    "default": 1
+  },
+  "edit_poll_attempts": {
+    "description": "图生图异步任务轮询次数",
+    "type": "int",
+    "default": 60
+  },
+  "edit_poll_interval": {
+    "description": "图生图异步任务轮询间隔（秒）",
+    "type": "int",
+    "default": 5
+  }
+}
