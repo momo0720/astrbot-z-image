@@ -1,8 +1,25 @@
 # astrbot-z-image
 
-Standalone AstrBot plugin repository for Z 画图.
+Generate images through a compatible text-to-image and image-edit API.
 
-## Included files
+## Features
+
+- Supports text-to-image and image-to-image generation.
+- Supports asynchronous image edit polling and multi-key failover.
+
+## Installation
+
+1. Clone or download this repository.
+2. Copy the `z_image` directory into your AstrBot plugin directory.
+3. Open the AstrBot plugin configuration page and fill in the required settings.
+4. Restart AstrBot or reload the plugin.
+
+## Usage
+
+- Main command: `/z画图`
+- Detailed command examples: see `z_image/README.md`
+
+## Repository Structure
 
 - `z_image/main.py`
 - `z_image/_conf_schema.json`
@@ -11,5 +28,5 @@ Standalone AstrBot plugin repository for Z 画图.
 
 ## Notes
 
-- Sensitive local API endpoints and keys have been replaced with placeholders.
+- Sensitive local API endpoints and keys have been replaced with placeholders where applicable.
 - Runtime-specific local config files are not included.
